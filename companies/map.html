@@ -62,11 +62,7 @@ clicky_site_ids.push(66449333);
 <img class='home_marker' height='12' src='../images/home_12x12.png' width='12'>
 </a>
 </h1>
-<div id='account_box'>
-<div id='global_sign_in'>
-<a href="../sign_in.html" id="sign_in_link">Sign In / Join</a>
-</div>
-</div>
+
 <ul id='main_nav'>
 <li><a href="../people.html" class="people">People</a></li>
 <li><a href="../companies.html" class="companies">Companies</a></li>
@@ -75,9 +71,7 @@ clicky_site_ids.push(66449333);
 <li><a href="../resources.html" class="resources">Resources</a></li>
 <li><a href="../about.html" class="resources">About</a></li>
 </ul>
-<form action='../search.html' id='global_search' method='get'>
-<input autosave='citizenry_global_search' name='q' placeholder='Search…' results='10' type='search'>
-</form>
+
 </div>
 <div id='global_sign_in_form'>
 <div class='sign_in_form'>
@@ -121,7 +115,7 @@ function initialize() {
     var mapStyles = [
          { featureType: "road", elementType: "geometry", stylers: [{ hue: "#8800ff" }, { lightness: 100}] }, {
            featureType: "road", stylers: [{ visibility: "on" }, { hue: "#91ff00" }, { saturation: -62 }, { gamma: 1.98 }, { lightness: 45}]}, {
-           featureType: "water", stylers: [{ hue: "#005eff" }, { gamma: 0.72 }, { lightness: 42}]}, { 
+           featureType: "water", stylers: [{ hue: "#005eff" }, { gamma: 0.72 }, { lightness: 42}]}, {
            featureType: "transit.line", stylers: [{ visibility: "on" }]}, {
            featureType: "administrative.locality", stylers: [ { visibility: "on" }]}, {
            featureType: "administrative.neighborhood", elementType: "geometry",stylers: [{ visibility: "simplified" }]}, {
@@ -163,7 +157,7 @@ function initialize() {
             iw = new google.maps.InfoWindow();
             for (var i = 0; i < locations.length; i++) {
                 var location = locations[i].company;
-                addMarker(location);          
+                addMarker(location);
             }
         });
     }
@@ -173,7 +167,7 @@ function initialize() {
 <h1>Companies in Greater Philadelphia</h1>
 
 <p>
-<a href="../user_sessions/new.html">Add your company</a> to include it on this map!  
+<a href="../user_sessions/new.html">Add your company</a> to include it on this map!
 There are currently 789 companies registered with valid street addresses.
 </p>
 
